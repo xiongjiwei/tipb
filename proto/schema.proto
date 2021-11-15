@@ -25,7 +25,7 @@ message ColumnInfo {
 	optional int32 flag = 6 [(gogoproto.nullable) = false];
 	repeated string elems = 7;
 	optional bytes default_val = 8; // Encoded datum.
-	repeated string charset = 9 [(gogoproto.nullable) = false];
+	optional string charset = 9 [(gogoproto.nullable) = false];
 	optional bool pk_handle = 21 [(gogoproto.nullable) = false]; // PK handle column value is row handle.
 }
 
